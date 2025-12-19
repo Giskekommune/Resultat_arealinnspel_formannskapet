@@ -11,70 +11,70 @@ var wms_layers = [];
                 url: 'http://tile.openstreetmap.org/{z}/{x}/{y}.png'
             })
         });
-var format_Innspelutsatttiljanuar_1 = new ol.format.GeoJSON();
-var features_Innspelutsatttiljanuar_1 = format_Innspelutsatttiljanuar_1.readFeatures(json_Innspelutsatttiljanuar_1, 
+var format_Takastikkjevidare_1 = new ol.format.GeoJSON();
+var features_Takastikkjevidare_1 = format_Takastikkjevidare_1.readFeatures(json_Takastikkjevidare_1, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Innspelutsatttiljanuar_1 = new ol.source.Vector({
+var jsonSource_Takastikkjevidare_1 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Innspelutsatttiljanuar_1.addFeatures(features_Innspelutsatttiljanuar_1);
-var lyr_Innspelutsatttiljanuar_1 = new ol.layer.Vector({
+jsonSource_Takastikkjevidare_1.addFeatures(features_Takastikkjevidare_1);
+var lyr_Takastikkjevidare_1 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Innspelutsatttiljanuar_1, 
-                style: style_Innspelutsatttiljanuar_1,
+                source:jsonSource_Takastikkjevidare_1, 
+                style: style_Takastikkjevidare_1,
+                popuplayertitle: 'Takast ikkje vidare',
+                interactive: false,
+                title: '<img src="styles/legend/Takastikkjevidare_1.png" /> Takast ikkje vidare'
+            });
+var format_Innspelutsatttiljanuar_2 = new ol.format.GeoJSON();
+var features_Innspelutsatttiljanuar_2 = format_Innspelutsatttiljanuar_2.readFeatures(json_Innspelutsatttiljanuar_2, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Innspelutsatttiljanuar_2 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Innspelutsatttiljanuar_2.addFeatures(features_Innspelutsatttiljanuar_2);
+var lyr_Innspelutsatttiljanuar_2 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_Innspelutsatttiljanuar_2, 
+                style: style_Innspelutsatttiljanuar_2,
                 popuplayertitle: 'Innspel utsatt til januar',
                 interactive: false,
-                title: '<img src="styles/legend/Innspelutsatttiljanuar_1.png" /> Innspel utsatt til januar'
+                title: '<img src="styles/legend/Innspelutsatttiljanuar_2.png" /> Innspel utsatt til januar'
             });
-var format_Eksternearealinnspeloppstartlinjer_2 = new ol.format.GeoJSON();
-var features_Eksternearealinnspeloppstartlinjer_2 = format_Eksternearealinnspeloppstartlinjer_2.readFeatures(json_Eksternearealinnspeloppstartlinjer_2, 
+var format_Eksternearealinnspeloppstartlinjer_3 = new ol.format.GeoJSON();
+var features_Eksternearealinnspeloppstartlinjer_3 = format_Eksternearealinnspeloppstartlinjer_3.readFeatures(json_Eksternearealinnspeloppstartlinjer_3, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Eksternearealinnspeloppstartlinjer_2 = new ol.source.Vector({
+var jsonSource_Eksternearealinnspeloppstartlinjer_3 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Eksternearealinnspeloppstartlinjer_2.addFeatures(features_Eksternearealinnspeloppstartlinjer_2);
-var lyr_Eksternearealinnspeloppstartlinjer_2 = new ol.layer.Vector({
+jsonSource_Eksternearealinnspeloppstartlinjer_3.addFeatures(features_Eksternearealinnspeloppstartlinjer_3);
+var lyr_Eksternearealinnspeloppstartlinjer_3 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Eksternearealinnspeloppstartlinjer_2, 
-                style: style_Eksternearealinnspeloppstartlinjer_2,
+                source:jsonSource_Eksternearealinnspeloppstartlinjer_3, 
+                style: style_Eksternearealinnspeloppstartlinjer_3,
                 popuplayertitle: 'Eksterne arealinnspel oppstart - linjer',
                 interactive: false,
     title: 'Eksterne arealinnspel oppstart - linjer<br />\
-    <img src="styles/legend/Eksternearealinnspeloppstartlinjer_2_0.png" /> Til KU<br />' });
-var format_Takastvidare_3 = new ol.format.GeoJSON();
-var features_Takastvidare_3 = format_Takastvidare_3.readFeatures(json_Takastvidare_3, 
+    <img src="styles/legend/Eksternearealinnspeloppstartlinjer_3_0.png" /> Til KU<br />' });
+var format_Takastvidare_4 = new ol.format.GeoJSON();
+var features_Takastvidare_4 = format_Takastvidare_4.readFeatures(json_Takastvidare_4, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Takastvidare_3 = new ol.source.Vector({
+var jsonSource_Takastvidare_4 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Takastvidare_3.addFeatures(features_Takastvidare_3);
-var lyr_Takastvidare_3 = new ol.layer.Vector({
+jsonSource_Takastvidare_4.addFeatures(features_Takastvidare_4);
+var lyr_Takastvidare_4 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Takastvidare_3, 
-                style: style_Takastvidare_3,
+                source:jsonSource_Takastvidare_4, 
+                style: style_Takastvidare_4,
                 popuplayertitle: 'Takast vidare',
                 interactive: false,
     title: 'Takast vidare<br />\
-    <img src="styles/legend/Takastvidare_3_0.png" /> Eksterne innspel<br />\
-    <img src="styles/legend/Takastvidare_3_1.png" /> Uregulert<br />\
-    <img src="styles/legend/Takastvidare_3_2.png" /> Råker regulering<br />' });
-var format_Takastut_4 = new ol.format.GeoJSON();
-var features_Takastut_4 = format_Takastut_4.readFeatures(json_Takastut_4, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Takastut_4 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_Takastut_4.addFeatures(features_Takastut_4);
-var lyr_Takastut_4 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_Takastut_4, 
-                style: style_Takastut_4,
-                popuplayertitle: 'Takast ut',
-                interactive: false,
-                title: '<img src="styles/legend/Takastut_4.png" /> Takast ut'
-            });
+    <img src="styles/legend/Takastvidare_4_0.png" /> Eksterne innspel<br />\
+    <img src="styles/legend/Takastvidare_4_1.png" /> Uregulert<br />\
+    <img src="styles/legend/Takastvidare_4_2.png" /> Råker regulering<br />' });
 var group_ResultatetterFormannskapsmte15122025 = new ol.layer.Group({
-                                layers: [lyr_Innspelutsatttiljanuar_1,lyr_Eksternearealinnspeloppstartlinjer_2,lyr_Takastvidare_3,lyr_Takastut_4,],
+                                layers: [lyr_Takastikkjevidare_1,lyr_Innspelutsatttiljanuar_2,lyr_Eksternearealinnspeloppstartlinjer_3,lyr_Takastvidare_4,],
                                 fold: 'open',
                                 title: 'Resultat etter Formannskapsmøte 15.12.2025'});
 var group_Underarbeid = new ol.layer.Group({
@@ -322,20 +322,20 @@ var group_Openstreetmap = new ol.layer.Group({
                                 fold: 'close',
                                 title: 'Open street map'});
 
-lyr_OSMStandard_0.setVisible(true);lyr_Innspelutsatttiljanuar_1.setVisible(false);lyr_Eksternearealinnspeloppstartlinjer_2.setVisible(true);lyr_Takastvidare_3.setVisible(true);lyr_Takastut_4.setVisible(false);
+lyr_OSMStandard_0.setVisible(true);lyr_Takastikkjevidare_1.setVisible(false);lyr_Innspelutsatttiljanuar_2.setVisible(false);lyr_Eksternearealinnspeloppstartlinjer_3.setVisible(true);lyr_Takastvidare_4.setVisible(true);
 var layersList = [group_Openstreetmap,group_ResultatetterFormannskapsmte15122025];
-lyr_Innspelutsatttiljanuar_1.set('fieldAliases', {'Område': 'Område', 'Type innsp': 'Type innsp', 'Ønske': 'Ønske', 'Journalnr': 'Journalnr', 'Endring': 'Endring', 'Konklusjon': 'Konklusjon', 'Bakgrunn': 'Bakgrunn', 'Kategori': 'Kategori', 'Bebygd': 'Bebygd', 'Regulert': 'Regulert', 'Øy': 'Øy', 'Eks formå': 'Eks formå', 'Ny formål': 'Ny formål', 'Vurdering/': 'Vurdering/', 'ObjektID': 'ObjektID', 'gnr.bnr.': 'gnr.bnr.', 'Resultat f': 'Resultat f', 'info forma': 'info forma', });
-lyr_Eksternearealinnspeloppstartlinjer_2.set('fieldAliases', {'id': 'id', 'Gbnr': 'Gbnr', 'Område': 'Område', 'Type innsp': 'Type innsp', 'Ønsker': 'Ønsker', 'Journalnr': 'Journalnr', 'Vurdering': 'Vurdering', 'Konklusjon': 'Konklusjon', });
-lyr_Takastvidare_3.set('fieldAliases', {'Område': 'Område', 'Type innsp': 'Type innsp', 'Ønske': 'Ønske', 'Journalnr': 'Journalnr', 'Endring': 'Endring', 'Konklusjon': 'Konklusjon', 'Bakgrunn': 'Bakgrunn', 'Kategori': 'Kategori', 'Bebygd': 'Bebygd', 'Regulert': 'Regulert', 'Øy': 'Øy', 'Eks formå': 'Eks formå', 'Ny formål': 'Ny formål', 'Vurdering/': 'Vurdering/', 'ObjektID': 'ObjektID', 'gnr.bnr.': 'gnr.bnr.', 'Resultat f': 'Resultat f', 'info forma': 'info forma', });
-lyr_Takastut_4.set('fieldAliases', {'Område': 'Område', 'Type innsp': 'Type innsp', 'Ønske': 'Ønske', 'Journalnr': 'Journalnr', 'Endring': 'Endring', 'Konklusjon': 'Konklusjon', 'Bakgrunn': 'Bakgrunn', 'Kategori': 'Kategori', 'Bebygd': 'Bebygd', 'Regulert': 'Regulert', 'Øy': 'Øy', 'Eks formå': 'Eks formå', 'Ny formål': 'Ny formål', 'Vurdering/': 'Vurdering/', 'ObjektID': 'ObjektID', 'gnr.bnr.': 'gnr.bnr.', 'Resultat f': 'Resultat f', 'info forma': 'info forma', });
-lyr_Innspelutsatttiljanuar_1.set('fieldImages', {'Område': 'TextEdit', 'Type innsp': 'TextEdit', 'Ønske': 'TextEdit', 'Journalnr': 'TextEdit', 'Endring': 'TextEdit', 'Konklusjon': 'TextEdit', 'Bakgrunn': 'TextEdit', 'Kategori': 'TextEdit', 'Bebygd': 'TextEdit', 'Regulert': 'TextEdit', 'Øy': 'TextEdit', 'Eks formå': 'TextEdit', 'Ny formål': 'TextEdit', 'Vurdering/': 'TextEdit', 'ObjektID': 'TextEdit', 'gnr.bnr.': 'TextEdit', 'Resultat f': 'TextEdit', 'info forma': 'TextEdit', });
-lyr_Eksternearealinnspeloppstartlinjer_2.set('fieldImages', {'id': 'TextEdit', 'Gbnr': 'TextEdit', 'Område': 'TextEdit', 'Type innsp': 'TextEdit', 'Ønsker': 'TextEdit', 'Journalnr': 'TextEdit', 'Vurdering': 'TextEdit', 'Konklusjon': 'TextEdit', });
-lyr_Takastvidare_3.set('fieldImages', {'Område': 'TextEdit', 'Type innsp': 'TextEdit', 'Ønske': 'TextEdit', 'Journalnr': 'TextEdit', 'Endring': 'TextEdit', 'Konklusjon': 'TextEdit', 'Bakgrunn': 'TextEdit', 'Kategori': 'TextEdit', 'Bebygd': 'TextEdit', 'Regulert': 'TextEdit', 'Øy': 'TextEdit', 'Eks formå': 'TextEdit', 'Ny formål': 'TextEdit', 'Vurdering/': 'TextEdit', 'ObjektID': 'TextEdit', 'gnr.bnr.': 'TextEdit', 'Resultat f': 'TextEdit', 'info forma': 'TextEdit', });
-lyr_Takastut_4.set('fieldImages', {'Område': 'TextEdit', 'Type innsp': 'TextEdit', 'Ønske': 'TextEdit', 'Journalnr': 'TextEdit', 'Endring': 'TextEdit', 'Konklusjon': 'TextEdit', 'Bakgrunn': 'TextEdit', 'Kategori': 'TextEdit', 'Bebygd': 'TextEdit', 'Regulert': 'TextEdit', 'Øy': 'TextEdit', 'Eks formå': 'TextEdit', 'Ny formål': 'TextEdit', 'Vurdering/': 'TextEdit', 'ObjektID': 'TextEdit', 'gnr.bnr.': 'TextEdit', 'Resultat f': 'TextEdit', 'info forma': 'TextEdit', });
-lyr_Innspelutsatttiljanuar_1.set('fieldLabels', {'Område': 'no label', 'Type innsp': 'no label', 'Ønske': 'no label', 'Journalnr': 'no label', 'Endring': 'no label', 'Konklusjon': 'no label', 'Bakgrunn': 'no label', 'Kategori': 'no label', 'Bebygd': 'no label', 'Regulert': 'no label', 'Øy': 'no label', 'Eks formå': 'no label', 'Ny formål': 'no label', 'Vurdering/': 'no label', 'ObjektID': 'no label', 'gnr.bnr.': 'no label', 'Resultat f': 'no label', 'info forma': 'no label', });
-lyr_Eksternearealinnspeloppstartlinjer_2.set('fieldLabels', {'id': 'header label - visible with data', 'Gbnr': 'header label - visible with data', 'Område': 'header label - visible with data', 'Type innsp': 'header label - visible with data', 'Ønsker': 'header label - visible with data', 'Journalnr': 'header label - visible with data', 'Vurdering': 'header label - visible with data', 'Konklusjon': 'header label - visible with data', });
-lyr_Takastvidare_3.set('fieldLabels', {'Område': 'no label', 'Type innsp': 'no label', 'Ønske': 'no label', 'Journalnr': 'no label', 'Endring': 'no label', 'Konklusjon': 'no label', 'Bakgrunn': 'no label', 'Kategori': 'no label', 'Bebygd': 'no label', 'Regulert': 'no label', 'Øy': 'no label', 'Eks formå': 'no label', 'Ny formål': 'no label', 'Vurdering/': 'no label', 'ObjektID': 'no label', 'gnr.bnr.': 'no label', 'Resultat f': 'no label', 'info forma': 'no label', });
-lyr_Takastut_4.set('fieldLabels', {'Område': 'no label', 'Type innsp': 'no label', 'Ønske': 'no label', 'Journalnr': 'no label', 'Endring': 'no label', 'Konklusjon': 'no label', 'Bakgrunn': 'no label', 'Kategori': 'no label', 'Bebygd': 'no label', 'Regulert': 'no label', 'Øy': 'no label', 'Eks formå': 'no label', 'Ny formål': 'no label', 'Vurdering/': 'no label', 'ObjektID': 'no label', 'gnr.bnr.': 'no label', 'Resultat f': 'no label', 'info forma': 'no label', });
-lyr_Takastut_4.on('precompose', function(evt) {
+lyr_Takastikkjevidare_1.set('fieldAliases', {'Område': 'Område', 'Type innsp': 'Type innsp', 'Ønske': 'Ønske', 'Journalnr': 'Journalnr', 'Endring': 'Endring', 'Konklusjon': 'Konklusjon', 'Bakgrunn': 'Bakgrunn', 'Kategori': 'Kategori', 'Bebygd': 'Bebygd', 'Regulert': 'Regulert', 'Øy': 'Øy', 'Eks formå': 'Eks formå', 'Ny formål': 'Ny formål', 'Vurdering/': 'Vurdering/', 'ObjektID': 'ObjektID', 'gnr.bnr.': 'gnr.bnr.', 'Resultat f': 'Resultat f', 'info forma': 'info forma', });
+lyr_Innspelutsatttiljanuar_2.set('fieldAliases', {'Område': 'Område', 'Type innsp': 'Type innsp', 'Ønske': 'Ønske', 'Journalnr': 'Journalnr', 'Endring': 'Endring', 'Konklusjon': 'Konklusjon', 'Bakgrunn': 'Bakgrunn', 'Kategori': 'Kategori', 'Bebygd': 'Bebygd', 'Regulert': 'Regulert', 'Øy': 'Øy', 'Eks formå': 'Eks formå', 'Ny formål': 'Ny formål', 'Vurdering/': 'Vurdering/', 'ObjektID': 'ObjektID', 'gnr.bnr.': 'gnr.bnr.', 'Resultat f': 'Resultat f', 'info forma': 'info forma', });
+lyr_Eksternearealinnspeloppstartlinjer_3.set('fieldAliases', {'id': 'id', 'Gbnr': 'Gbnr', 'Område': 'Område', 'Type innsp': 'Type innsp', 'Ønsker': 'Ønsker', 'Journalnr': 'Journalnr', 'Vurdering': 'Vurdering', 'Konklusjon': 'Konklusjon', });
+lyr_Takastvidare_4.set('fieldAliases', {'Område': 'Område', 'Type innsp': 'Type innsp', 'Ønske': 'Ønske', 'Journalnr': 'Journalnr', 'Endring': 'Endring', 'Konklusjon': 'Konklusjon', 'Bakgrunn': 'Bakgrunn', 'Kategori': 'Kategori', 'Bebygd': 'Bebygd', 'Regulert': 'Regulert', 'Øy': 'Øy', 'Eks formå': 'Eks formå', 'Ny formål': 'Ny formål', 'Vurdering/': 'Vurdering/', 'ObjektID': 'ObjektID', 'gnr.bnr.': 'gnr.bnr.', 'Resultat f': 'Resultat f', 'info forma': 'info forma', });
+lyr_Takastikkjevidare_1.set('fieldImages', {'Område': 'TextEdit', 'Type innsp': 'TextEdit', 'Ønske': 'TextEdit', 'Journalnr': 'TextEdit', 'Endring': 'TextEdit', 'Konklusjon': 'TextEdit', 'Bakgrunn': 'TextEdit', 'Kategori': 'TextEdit', 'Bebygd': 'TextEdit', 'Regulert': 'TextEdit', 'Øy': 'TextEdit', 'Eks formå': 'TextEdit', 'Ny formål': 'TextEdit', 'Vurdering/': 'TextEdit', 'ObjektID': 'TextEdit', 'gnr.bnr.': 'TextEdit', 'Resultat f': 'TextEdit', 'info forma': 'TextEdit', });
+lyr_Innspelutsatttiljanuar_2.set('fieldImages', {'Område': 'TextEdit', 'Type innsp': 'TextEdit', 'Ønske': 'TextEdit', 'Journalnr': 'TextEdit', 'Endring': 'TextEdit', 'Konklusjon': 'TextEdit', 'Bakgrunn': 'TextEdit', 'Kategori': 'TextEdit', 'Bebygd': 'TextEdit', 'Regulert': 'TextEdit', 'Øy': 'TextEdit', 'Eks formå': 'TextEdit', 'Ny formål': 'TextEdit', 'Vurdering/': 'TextEdit', 'ObjektID': 'TextEdit', 'gnr.bnr.': 'TextEdit', 'Resultat f': 'TextEdit', 'info forma': 'TextEdit', });
+lyr_Eksternearealinnspeloppstartlinjer_3.set('fieldImages', {'id': 'TextEdit', 'Gbnr': 'TextEdit', 'Område': 'TextEdit', 'Type innsp': 'TextEdit', 'Ønsker': 'TextEdit', 'Journalnr': 'TextEdit', 'Vurdering': 'TextEdit', 'Konklusjon': 'TextEdit', });
+lyr_Takastvidare_4.set('fieldImages', {'Område': 'TextEdit', 'Type innsp': 'TextEdit', 'Ønske': 'TextEdit', 'Journalnr': 'TextEdit', 'Endring': 'TextEdit', 'Konklusjon': 'TextEdit', 'Bakgrunn': 'TextEdit', 'Kategori': 'TextEdit', 'Bebygd': 'TextEdit', 'Regulert': 'TextEdit', 'Øy': 'TextEdit', 'Eks formå': 'TextEdit', 'Ny formål': 'TextEdit', 'Vurdering/': 'TextEdit', 'ObjektID': 'TextEdit', 'gnr.bnr.': 'TextEdit', 'Resultat f': 'TextEdit', 'info forma': 'TextEdit', });
+lyr_Takastikkjevidare_1.set('fieldLabels', {'Område': 'no label', 'Type innsp': 'no label', 'Ønske': 'no label', 'Journalnr': 'no label', 'Endring': 'no label', 'Konklusjon': 'no label', 'Bakgrunn': 'no label', 'Kategori': 'no label', 'Bebygd': 'no label', 'Regulert': 'no label', 'Øy': 'no label', 'Eks formå': 'no label', 'Ny formål': 'no label', 'Vurdering/': 'no label', 'ObjektID': 'no label', 'gnr.bnr.': 'no label', 'Resultat f': 'no label', 'info forma': 'no label', });
+lyr_Innspelutsatttiljanuar_2.set('fieldLabels', {'Område': 'no label', 'Type innsp': 'no label', 'Ønske': 'no label', 'Journalnr': 'no label', 'Endring': 'no label', 'Konklusjon': 'no label', 'Bakgrunn': 'no label', 'Kategori': 'no label', 'Bebygd': 'no label', 'Regulert': 'no label', 'Øy': 'no label', 'Eks formå': 'no label', 'Ny formål': 'no label', 'Vurdering/': 'no label', 'ObjektID': 'no label', 'gnr.bnr.': 'no label', 'Resultat f': 'no label', 'info forma': 'no label', });
+lyr_Eksternearealinnspeloppstartlinjer_3.set('fieldLabels', {'id': 'header label - visible with data', 'Gbnr': 'header label - visible with data', 'Område': 'header label - visible with data', 'Type innsp': 'header label - visible with data', 'Ønsker': 'header label - visible with data', 'Journalnr': 'header label - visible with data', 'Vurdering': 'header label - visible with data', 'Konklusjon': 'header label - visible with data', });
+lyr_Takastvidare_4.set('fieldLabels', {'Område': 'no label', 'Type innsp': 'no label', 'Ønske': 'no label', 'Journalnr': 'no label', 'Endring': 'no label', 'Konklusjon': 'no label', 'Bakgrunn': 'no label', 'Kategori': 'no label', 'Bebygd': 'no label', 'Regulert': 'no label', 'Øy': 'no label', 'Eks formå': 'no label', 'Ny formål': 'no label', 'Vurdering/': 'no label', 'ObjektID': 'no label', 'gnr.bnr.': 'no label', 'Resultat f': 'no label', 'info forma': 'no label', });
+lyr_Takastvidare_4.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

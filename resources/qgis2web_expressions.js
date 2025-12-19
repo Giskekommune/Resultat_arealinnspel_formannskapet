@@ -766,7 +766,7 @@ function fnc_project_color(values, context) {
 
 
 
-function exp_Takastvidare_3rule0_eval_expression(context) {
+function exp_Takastvidare_4rule0_eval_expression(context) {
     // Regulert IS NULL OR Regulert = ''
 
     var feature = context.feature;
@@ -779,7 +779,7 @@ function exp_Takastvidare_3rule0_eval_expression(context) {
 }
 
 
-function exp_Takastvidare_3rule1_eval_expression(context) {
+function exp_Takastvidare_4rule1_eval_expression(context) {
     // Regulert = 'Nei'
 
     var feature = context.feature;
@@ -792,7 +792,7 @@ function exp_Takastvidare_3rule1_eval_expression(context) {
 }
 
 
-function exp_Takastvidare_3rule2_eval_expression(context) {
+function exp_Takastvidare_4rule2_eval_expression(context) {
     // Regulert IS NOT NULL AND Regulert <> 'Nei'
 
     var feature = context.feature;
